@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        img{
+            height: 50vh;
+            /* filter: blur(10px); */
+        }
+
+        .img1{
+            filter: brightness(122%);
+        }
+        .img2{
+            filter: invert(1);
+        }
+        .img3{
+            filter: opacity(0.5);
+        }
+    </style>
+</head>
+<body>
+    <img class="img1" src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Furr">
+     <img class="img2" src="https://assets.gqindia.com/photos/6422a710ef2ea25840c2c39d/1:1/w_1079,h_1079,c_limit/SRK-buys-Rolls-Royce-Cullinan-Black-Badge_02.jpg" alt="">
+     <img class="img3" src="https://www.hindustantimes.com/ht-img/img/2023/10/12/1600x900/akshay_kumar_1659860706633_1697085201279.jpg" alt="">
+</body>
+</html>

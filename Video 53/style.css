@@ -1,0 +1,110 @@
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 102px;
+    position: relative;
+    z-index: 10;
+}
+
+nav img {
+    width: 160px;
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    padding: 0 30px;
+    margin-top: 40px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: 1000;
+    font-size: 60px;
+    margin: 0 500px;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.hero input,
+button {
+    margin-top: 20px;
+}
+
+.separation {
+    background-color: darkslategray;
+    height: 7px;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 7px 2spx;
+    border-radius: 7px;
+    height: 60px;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 250px;
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+}

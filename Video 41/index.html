@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc-6 Navbar using Flex Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: whitesmoke;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        nav ul{
+            display: flex;
+            
+        }
+        nav ul li{
+            list-style: none;
+            padding: 20px;
+            font-size: large;
+        }
+
+        nav img{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <div class="logoname">
+                    <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products</li>
+                    <li>For Business</li>
+                    <li>Resources</li>
+                    <li>Support</li>
+                    <li>Our Company</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
