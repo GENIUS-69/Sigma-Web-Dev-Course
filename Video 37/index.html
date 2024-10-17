@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body main {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding-top: 78px;
+        }
+
+        header{
+            background-color: magenta;
+            position: fixed;
+            width: 100%;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bolder;
+        }
+
+        nav {
+            padding: 30px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: red;
+        }
+
+        #sec1{
+            background-color: green;
+            width: 93vw;
+            height: 600px;
+            margin: 30px;
+        }
+
+        main #sec1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main #sec1 *{
+            margin: auto 80px;
+        }
+
+        #box1{
+            background-color: pink;
+            height: 500px;
+            width: 500px;
+        }
+
+        #box2{
+            background-color: lightblue;
+            height: 500px;
+            width: 500px;
+        }
+
+        #sec2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sec2 *{
+            margin: auto 50px;
+        }
+
+        #sec2 #box3{
+            width: 73vw;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            border-radius: 50px;
+            background-color: aquamarine;
+        }
+        #sec2 #logo{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            border-radius: 105px;
+            background-color: brown;
+        }
+
+        #footer{
+            height: 100px;
+            width: 100vw;
+            background-color: gray;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/"> Home</a></li>
+                <li><a href="/"> About</a></li>
+                <li><a href="/"> Services</a></li>
+                <li><a href="/"> Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sec1">
+            <div id="box1"></div>
+            <div id="box2"></div>
+        </section>
+
+        <section id="sec2">
+            <div id="box3">
+                <h3>Welcome to this Sigma Web Development Express</h3>
+            </div>
+            <div id="logo"></div>
+        </section>
+    </main>
+
+    <footer id="footer">
+
+    </footer>
+</body>
+</html>

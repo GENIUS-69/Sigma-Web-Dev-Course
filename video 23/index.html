@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            display: inline-block;
+            /* Margin and Padding not applicable on Inline element */
+            padding: 45px;
+            margin: 34px;
+            display: flex;
+        }
+
+        span {
+            border: 2px solid black;
+            display: inline;
+            /* Inline Block is use to give both inline and block*/
+            margin: 45px;
+            padding: 45px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Im a box.
+    </div>
+    <div class="box">
+        I am a div
+    </div>
+    <span>
+        Im a good
+    </span>
+    <span>boy</span>
+</body>
+
+</html>

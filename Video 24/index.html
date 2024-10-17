@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Outlines</title>
+    <style>
+        /* When it comes to web design, CSS (Cascading Style Sheets) plays an indispensable role in enhancing the visual aesthetics of a website.*/
+        .box {
+            border: 2px solid black;
+            /* 
+            {box-shadow: h-offset v-offset blur spread color inset;}
+            h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+            blur: The larger the value, the blurrier the shadow.
+            spread: Expands or shrinks the shadow size.
+            color: Defines the shadow color.
+            inset: Makes the shadow inner. 
+            */
+            box-shadow: 5px 5px 15px 5px #fd0202;
+        }
+        .text-element{
+            /* text-shadow: h-offset v-offset blur color; */
+            text-shadow: 2px 2px 4px #ffff00;
+            /* outline: width style color; */
+            outline: 5px dotted darkblue;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I'm a Box.
+    </div>
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque libero ad sit tempore aspernatur? Nostrum culpa ab quasi est, neque laboriosam! Eos, voluptatibus libero alias facilis debitis consequatur eum distinctio dolores praesentium quas odio aut corporis quo a aperiam tempore, quod earum dolore pariatur magni in, velit cumque? Voluptates minima dolorum incidunt, itaque odio nemo saepe nostrum accusamus magni quibusdam architecto? Dicta explicabo quidem amet illum. Ipsum, unde. Ea magni similique ducimus fugit inventore assumenda ut quos animi accusamus commodi, maxime optio nihil aperiam, error doloremque eligendi laudantium nemo reprehenderit dignissimos sed quas excepturi! Impedit accusamus dicta similique commodi temporibus?
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLoat and Color</title>
+    <style>
+        /* Float is used to allow other content to set at beside of this content even if they are block element.*/
+        .cards {
+            border: 2px solid black;
+            display: flow-root; /* if the content is overflow from container. */
+        }
+
+        img {
+            float: left;
+            /* float: right; */
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both; /* Use to clear blank section float of element.*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="" height="400px">
+        <div class="card">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut beatae modi qui, hic dicta tenetur ipsam
+                aliquam maxime neque sit. Enim, deserunt quisquam?</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus hic rem debitis! Voluptatum voluptatem
+                explicabo commodi delectus! Dolores libero, atque quod dolor eaque praesentium quasi numquam totam harum
+                modi iusto quis ut ad! Adipisci, quasi accusantium nostrum ab corrupti saepe unde, sed reprehenderit
+                alias molestiae mollitia voluptatibus sapiente eligendi dolor quidem quaerat suscipit eos vel! Ut,
+                magnam doloribus. Vero vel velit pariatur possimus id dolor labore maxime atque accusamus voluptates
+                non, fuga sint quam repellendus reiciendis facilis ipsum alias odit, nam autem quidem minus dolores.
+                Repellendus excepturi, alias modi est, totam expedita, maxime voluptates officiis explicabo atque
+                consectetur? Ab, repellat cupiditate. Nesciunt sapiente sit saepe sed voluptate suscipit ea dolore qui
+                pariatur, voluptates at dignissimos possimus assumenda, ad accusantium ratione quo ipsum. Aliquid id
+                ratione quisquam maxime obcaecati! Placeat repellendus veritatis similique vel laudantium dolores ipsum
+                corrupti odio distinctio officia ab dicta nemo corporis aperiam mollitia eligendi animi, reiciendis,
+                earum porro. Impedit nostrum quo ut blanditiis natus aspernatur culpa necessitatibus, numquam quibusdam
+                excepturi expedita a quod, quisquam, iure illo dicta non voluptatum voluptatem veniam consectetur sunt
+                ducimus! Molestias, blanditiis recusandae magnam deserunt nisi in natus, mollitia vel pariatur odio
+                cupiditate. Corporis non exercitationem nam tenetur, veniam porro. Odit maiores, fugiat sequi ipsum
+                dolores, nihil incidunt magnam animi excepturi quo, laudantium iste consectetur sint illum cum
+                perferendis. Tenetur, accusamus natus! Nulla nostrum consequuntur vel natus explicabo, enim distinctio
+                accusantium veritatis rem dicta placeat, ipsum eligendi quos consectetur eos nihil vero! Aut ex eum
+                repellendus facilis ullam, nobis consequatur rem voluptatem pariatur magni. Id repudiandae autem ducimus
+                nulla expedita, corrupti nisi est sapiente blanditiis, ipsam qui odio nam quidem perferendis
+                perspiciatis dolore corporis sequi ullam iste quod doloremque. Error, quam aliquam alias esse hic iusto
+                mollitia voluptatibus molestias incidunt eligendi in placeat iure ad, ullam et culpa modi nisi veniam
+                quas, doloribus deleniti aperiam! Consequatur vero impedit repellendus temporibus iure id cum optio,
+                officiis, inventore enim repudiandae dolores. Incidunt expedita fugit modi nostrum ad neque nesciunt
+                suscipit, porro praesentium, voluptatum corporis rem voluptatem, ipsa blanditiis.</p>
+        </div>
+        <div class="card">Card3</div>
+    </div>
+</body>
+
+</html>

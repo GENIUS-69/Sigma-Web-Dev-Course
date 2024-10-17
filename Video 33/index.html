@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Website</title>
+    <style>
+        :root{
+            --home: rgb(144, 144, 23);
+            --contact: rgb(0,128,0);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: blueviolet;
+        }
+        nav{
+            display: flex;
+            padding: 23px;
+            justify-content: space-around;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            padding: 0 50px 0 25px;
+        }
+        nav ul li{
+            padding: 0 23px;
+            float: left;
+            background-color: var(--home);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><h1>Sarthak Hota</h1></div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Services</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
