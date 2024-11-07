@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM #ID, .CLASS and More</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            margin: 50px;
+            padding: 50px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Bupendra Jogi 1</div>
+        <div class="box">Bupendra Jogi 2</div>
+        <div id="blue" class="box">Bupendra Jogi 2.5</div>
+        <div class="box">Bupendra Jogi 3</div>
+        <div class="box">Bupendra Jogi 4</div>
+        <div class="box">Bupendra Jogi 5</div>
+    </div>
+
+    <script>
+        let boxes = document.getElementsByClassName("box")
+        console.log(boxes);
+        boxes[3].style.backgroundColor="red"
+        document.getElementById("blue").style.backgroundColor="blue"
+        
+        document.querySelector(".box").style.backgroundColor=""
+        document.querySelectorAll(".box").forEach(e =>{
+            e.style.color="yellow"
+            
+        })
+
+        document.getElementsByTagName("div")
+    </script>
+</body>
+</html>
