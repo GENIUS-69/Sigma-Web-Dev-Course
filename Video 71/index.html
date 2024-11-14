@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and Removing Elements using JavaScript</title>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="border: 2px solid black;" data-createdby="Genius" id="1">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+
+        <script>
+            // let div = document.createElement("div");
+            // div.innerHTML="Genius 69";
+            // div.setAttribute("class","createdby")
+            // document.querySelector(".container").before(div)
+            // cont.remove()
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("afterend","<b> I'm Inserted</b>")
+        </script>
+        
+    </div>
+    
+</body>
+</html>
