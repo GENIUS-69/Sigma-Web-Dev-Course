@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Function</title>
+</head>
+<body>
+    
+
+    <script>
+        function loadscript(src,CallBack) {
+            let script = document.createElement('script')
+            script.src=src
+            script.onload=()=>CallBack(script)
+            document.head.append(script)
+        }
+
+        loadscript('https://cdn.harry.com',(script)=>{
+            alert('script is loaded')
+            alert(script.src)
+        });
+    </script>
+</body>
+</html>
