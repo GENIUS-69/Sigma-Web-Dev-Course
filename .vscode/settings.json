@@ -1,5 +1,5 @@
 {
     "liveServer.settings.CustomBrowser": "microsoft-edge",
     "livePreview.openPreviewTarget": "External Browser",
-    "livePreview.customExternalBrowser": "Edge"
+    "livePreview.customExternalBrowser": "Chrome"
 }
