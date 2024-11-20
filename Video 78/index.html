@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Simulator Solved</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            padding: 20px;
+        }
+        .blinking {
+            display: inline-block;
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal"></div>
+
+    <script>
+        const messages = [
+            "Initializing Hacking",
+            "Reading your Files",
+            "Password files Detected",
+            "Sending all passwords and personal files to server",
+            "Cleaning up"
+        ];
+
+        const terminal = document.getElementById("terminal");
+
+        function appendMessage(message) {
+            const messageElement = document.createElement("div");
+            messageElement.innerHTML = message + '<span class="blinking">...</span>';
+            terminal.appendChild(messageElement);
+        }
+
+        function simulateHacking() {
+            let delay = 0;
+
+            messages.forEach((message, index) => {
+                const randomDelay = Math.floor(Math.random() * 7000) + 1000; 
+                delay += randomDelay;
+
+                setTimeout(() => {
+                    appendMessage(message);
+                }, delay);
+            });
+
+            setTimeout(() => {
+                const successMessage = document.createElement("div");
+                successMessage.innerHTML = "<strong>Hacking Complete!</strong>";
+                terminal.appendChild(successMessage);
+            }, delay + 2000);
+        }
+
+        simulateHacking();
+    </script>
+</body>
+</html>
