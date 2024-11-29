@@ -21,3 +21,4 @@ console.log(a.slice(1,5));
 console.log(a.replace("en",77));
 
 console.log(a);
+mHm
