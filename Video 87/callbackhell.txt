@@ -1,0 +1,20 @@
+During the write and read continiously, it will make the program long which called callback hell
+
+fs.writeFileSync("genius.txt", "I am a genius")
+fs.writeFile("genius2.txt", "I am a genius 2", () => {
+    console.log("OK");
+    fs.readFile("genius2.txt",(error,data)=>{
+        console.log(error,data);
+        console.log(error,data.toString());
+
+        fs.writeFileSync("genius.txt", "I am a genius")
+            fs.writeFile("genius2.txt", "I am a genius 2", () => {
+            console.log("OK");
+            fs.readFile("genius2.txt",(error,data)=>{
+                console.log(error,data);
+                console.log(error,data.toString());  
+            })
+        })
+        
+    })
+})
