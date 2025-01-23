@@ -1,7 +1,7 @@
 {
-  "name": "video-89",
+  "name": "video-92",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "type": "commonjs",
   "description": "",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^5.0.1"
   }
 }

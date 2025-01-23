@@ -27,6 +27,7 @@ const updatePlayButton = () => {
     playButton.src = isPlaying ? "./svg/pause.svg" : "./svg/play.svg";
 }
 
+
 function secondsToMinutesSeconds(seconds) {
     if (isNaN(seconds) || seconds < 0) {
         return "Invalid Input";
