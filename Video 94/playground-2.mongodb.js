@@ -1,5 +1,5 @@
 // Select the database to use.
-use('SigmaDatabase');
+use('Sigma');
 
 // Insert a few documents into the Courses collection.
 db.getCollection('Courses').insertMany([
